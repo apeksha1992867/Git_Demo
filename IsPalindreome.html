@@ -1,0 +1,43 @@
+<html>  
+<head> <title> JavaScript Palindrome </title>  
+</head>  
+<body>
+    <script>
+    
+
+        function fun2(string) {  
+             
+            const len = string.length; 
+
+            for(let i=0;i<len/2;i++){
+               if(string[i] !== string[len-1-i]){
+                 document.write("it is not a palindrom");
+                   document.getElementById("result").innerHTML = "It is not a Palindrom !"; 
+               }
+               else{
+                document.getElementById("result").innerHTML = "It is  a Palindrom!"; 
+               }
+           } 
+        
+           
+        }
+        
+       
+   
+   </script>
+    <h1> Palindrome Test</h1>
+  
+    <input type="text"  placeholder="Enter a string">
+    <button onclick = "fun2('meena')"> check palindrom </button> 
+    <p> 
+   <div id = "result"> </div> 
+</p> 
+    
+ 
+
+   
+        
+        
+    
+</body>
+</html>
